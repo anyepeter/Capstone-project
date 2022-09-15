@@ -1,4 +1,3 @@
-
 const seeMore = document.querySelector('.seemore')
 const seeArtist = document.querySelector('.artist-section')
 const span = document.querySelector('#span')
@@ -58,5 +57,4 @@ artistContainer.forEach((cardArtist) => {
     `
     artsitSection.innerHTML += content
 
-}) 
-
+})
