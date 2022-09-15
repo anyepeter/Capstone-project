@@ -1,16 +1,12 @@
 
-
 const seeMore = document.querySelector('.seemore')
 const seeArtist = document.querySelector('.artist-section')
-
 const span = document.querySelector('#span')
-
+const  artsitSection = document.querySelector('.artist-container')
 
 seeMore.addEventListener(('click'), () => {
     seeArtist.classList.toggle('setoff')
 })
-
- const  artsitSection = document.querySelector('.artist-container')
 
 const artistContainer = [
     {
