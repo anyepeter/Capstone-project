@@ -1,0 +1,210 @@
+
+/* main color */
+
+:root {
+  --black: #272a31;
+  --red: #ec5242;
+  --white: #d3d3d3;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Lato', sans-serif;
+}
+
+.landing-section1 {
+  background-image: linear-gradient(180deg, rgba(255, 255, 255, 0) -3.75%, rgba(255, 255, 255, 0.8) 20%), url("../Images/Musician/about-section.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  padding: 15rem 2rem;
+  height: auto;
+}
+
+.intro-section1 {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+}
+
+.openingText1 {
+  color: var(--red);
+  font-weight: 400;
+  font-size: 32px;
+}
+
+.captureText1 {
+  font-size: 62px;
+  font-weight: 900;
+  line-height: 4.5rem;
+  text-transform: uppercase;
+  letter-spacing: 0.4rem;
+  width: 35rem;
+  color: var(--red);
+  text-align: center;
+}
+
+.explaining-text1 {
+  width: 35rem;
+  font-size: 20px;
+  line-height: 1.9rem;
+  padding: 2rem;
+  border: 2px solid #fff;
+  background-color: #fff;
+  text-align: center;
+}
+
+.eventDate1 {
+  font-size: 22px;
+  font-weight: 400;
+  text-align: center;
+}
+
+.venue1 {
+  font-size: 28px;
+  text-decoration: underline;
+  font-weight: 900;
+}
+
+.about-logo-container {
+  padding: 5rem 10%;
+  align-items: center;
+  text-align: center;
+}
+
+.text-header2 {
+  font-size: 32px;
+  font-weight: 400;
+}
+
+.line2 {
+  height: 3px;
+  border: none;
+}
+
+.about-text,
+.about-text2 {
+  font-size: 22px;
+  width: 100%;
+  margin-top: 20px;
+  font-weight: 300;
+  display: flex;
+  line-height: 2rem;
+  justify-content: center;
+  text-align: center;
+  color: var(--black);
+}
+
+.about-text p {
+  width: 30rem;
+}
+
+.about-logo {
+  width: 100%;
+}
+
+.about-logo img {
+  width: 20rem;
+  padding: 30px;
+  margin: 20px;
+  border: 1px solid var(--black);
+}
+
+.recent-section {
+  padding: 5rem 10%;
+  border-top: 2px solid var(--black);
+}
+
+.recent-carts {
+  width: 100%;
+  padding: 2rem 10%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.card {
+  width: 100%;
+  height: 300px;
+  font-size: 28px;
+  font-weight: 700;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 10%;
+  border: 1px solid red;
+}
+
+.card1 {
+  background-image: url("../Images/Musician/card1.jpg");
+  background-size: cover;
+  color: var(--red);
+  transition: all;
+  transition-duration: 1s;
+}
+
+.card2 {
+  background-image: url("../Images/Musician/card2.jpg");
+  background-size: cover;
+  color: var(--red);
+  transition: all;
+  transition-duration: 1s;
+}
+
+.card1:hover {
+  background-image: linear-gradient(190.9deg, rgba(255, 255, 255, 0) -9.75%, rgba(236, 82, 66, 0.8) 20%), url("../Images/Musician/card1.jpg");
+  background-size: cover;
+  color: #fff;
+  font-size: 32px;
+  cursor: pointer;
+}
+
+.card2:hover {
+  background-image: linear-gradient(180deg, rgba(255, 255, 255, 0) -3.75%, rgba(236, 82, 66, 0.8) 20%), url("../Images/Musician/card2.jpg");
+  background-size: cover;
+  color: #fff;
+  cursor: pointer;
+  font-size: 32px;
+}
+
+@media (min-width: 768px) {
+  .explaining-text1 {
+    width: 40rem;
+    font-size: 22px;
+  }
+
+  .setoff {
+    display: block;
+  }
+
+  .captureText1 {
+    font-size: 72px;
+    width: 40rem;
+  }
+
+  .about-logo img {
+    width: 30rem;
+  }
+
+  .recent-carts {
+    flex-direction: row;
+  }
+}
+
+@media (min-width: 1400px) {
+  .captureText1 {
+    font-size: 72px;
+    width: 45rem;
+    line-height: 6rem;
+  }
+
+  .about-logo img {
+    width: 40rem;
+  }
+}
