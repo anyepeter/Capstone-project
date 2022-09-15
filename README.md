@@ -12,10 +12,14 @@ This project is develop using the following languages
 - CSS
 - JAVASCRIPT
 
-## Live Demo (if available)
+## Live Demo
 
 [Live Demo Link](https://livedemo.com)
 
+
+## live loom
+
+[Loom video](https://www.loom.com/share/ed0bf0346566431dbb1aa22c36b682f4)
 
 ## Getting Started
 
@@ -52,7 +56,7 @@ Give a ⭐️ if you like this project!
 
 ## Acknowledgments
 
-- Cindy Shin the author of the original (Design)[https://www.behance.net/gallery/29845175/CC-Global-Summit-2015]
+- Cindy Shin the author of the original [Design](https://www.behance.net/gallery/29845175/CC-Global-Summit-2015)
 
 
 ## 📝 License
