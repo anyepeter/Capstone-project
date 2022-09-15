@@ -13,7 +13,9 @@
   box-sizing: border-box;
   font-family: 'Lato', sans-serif;
 }
-
+body{
+  background-color: #fff;
+}
 .landing-section1 {
   background-image: linear-gradient(180deg, rgba(255, 255, 255, 0) -3.75%, rgba(255, 255, 255, 0.8) 20%), url("../Images/Musician/about-section.jpg");
   background-size: cover;
