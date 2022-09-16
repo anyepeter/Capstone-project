@@ -1,0 +1,547 @@
+
+/* main color */
+
+:root {
+  --black: #272a31;
+  --red: #ec5242;
+  --white: #d3d3d3;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Lato', sans-serif;
+}
+
+body {
+  background-color: var(--black);
+}
+
+/* -------------Landing page section--------------------- */
+
+/* ---------------Landing page container------------------- */
+
+.landing-section {
+  background-image: linear-gradient(180deg, rgba(255, 255, 255, 0) -3.75%, rgba(255, 255, 255, 0.8) 0%), url("../Images/Hero-image/main-hero-image.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  padding: 15rem 2rem;
+  height: auto;
+}
+
+.intro-section {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.openingText {
+  color: var(--red);
+  font-weight: 400;
+  font-size: 32px;
+}
+
+.captureText {
+  font-size: 62px;
+  font-weight: 900;
+  line-height: 4.5rem;
+  text-transform: uppercase;
+  letter-spacing: 0.4rem;
+  width: 35rem;
+  background-image: linear-gradient(180deg, rgba(255, 255, 255, 0) -3.75%, rgba(236, 82, 66, 0.9) 0%), url("../Images/Musician/pexels-yiming-tang-12553887.jpg");
+  background-size: 30px;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+}
+
+.explaining-text {
+  width: 30rem;
+  font-size: 20px;
+  line-height: 1.9rem;
+  padding: 2rem;
+  border: 2px solid #fff;
+  background-color: var(--white);
+}
+
+.eventDate {
+  font-size: 22px;
+  font-weight: 900;
+}
+
+.venue {
+  font-size: 20px;
+  font-weight: 400;
+}
+
+/* -------------Landing page section--------------------- */
+
+/* ---------------Sheduling time section------------------- */
+
+.shedule-section {
+  width: 100%;
+  height: auto;
+  background-color: var(--black);
+  padding: 3rem 2rem;
+}
+
+.text-time {
+  width: 100%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+}
+
+.text-header {
+  text-transform: capitalize;
+  color: #fff;
+  font-size: 22px;
+  font-weight: 500;
+}
+
+.line {
+  width: 50px;
+  background-color: var(--red);
+  height: 2px;
+}
+
+.program {
+  display: none;
+}
+
+.shedule-container,
+.artist-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 10px;
+  justify-content: center;
+  margin: 4rem 0;
+}
+
+.shedule-cards {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  align-items: center;
+  width: 100%;
+  height: auto;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+footer div p {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.5rem;
+}
+
+.shedule-cards h3 {
+  width: 4rem;
+  text-align: center;
+  color: var(--red);
+  font-size: 22px;
+  margin-right: 1rem;
+  font-weight: var(--red);
+}
+
+.shedule-cards p {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  padding: 0 1rem;
+}
+
+.shedule-cards:hover {
+  border: 2px solid var(--white);
+}
+
+.image {
+  width: 5rem;
+  padding: 1rem;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.ticket-button {
+  width: 25rem;
+  height: 150px;
+  background-color: var(--red);
+  font-size: 32px;
+  border: none;
+  color: #fff;
+}
+
+/* -------------Landing page section--------------------- */
+
+/* ---------------artists section------------------- */
+
+.artist-section {
+  padding: 3rem 2rem 0 2rem;
+  background-image: linear-gradient(180deg, rgba(255, 255, 255, 0) -3.75%, rgba(255, 255, 255, 0.5) 0%), url("../Images/Musician/pexels-yiming-tang-12553887.jpg");
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: auto;
+  width: 100%;
+  overflow: hidden;
+}
+
+.text-header2 {
+  text-transform: capitalize;
+  font-size: 22px;
+  font-weight: 500;
+}
+
+.line2 {
+  width: 50px;
+  background-color: var(--red);
+  height: 2px;
+}
+
+.artist {
+  display: flex;
+  gap: 10px;
+}
+
+.artist:hover {
+  background-color: var(--white);
+  cursor: pointer;
+  padding: 5px;
+  transition: all;
+  border: 2px solid #fff;
+}
+
+.artist-container {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 0;
+  padding-bottom: 3rem;
+}
+
+.setoff {
+  height: 36vh;
+}
+
+@keyframes slidein {
+  from {
+    left: -400px;
+  }
+
+  to {
+    left: 0;
+  }
+}
+
+.image-artist {
+  width: 6rem;
+  padding: 0;
+  height: 100px;
+}
+
+.cards {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.cards h2 {
+  font-weight: 700;
+  font-size: 18px;
+  text-transform: uppercase;
+}
+
+.cards h3 {
+  font-weight: 900;
+  color: var(--red);
+  font-size: 28px;
+}
+
+.cards p {
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.demo-text {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+
+.seemore {
+  width: 100%;
+  height: 50px;
+  background-color: #fff;
+  left: 0;
+  align-items: center;
+  display: flex;
+  border: 5px solid var(--red);
+  justify-content: center;
+  font-size: 28px;
+  text-transform: capitalize;
+}
+
+.seemore span {
+  padding: 10px;
+}
+
+/* -------------Landing page section--------------------- */
+
+/* ---------------spnosor section------------------- */
+
+.spnosor-section {
+  width: 100%;
+  height: 40vh;
+  background-color: var(--black);
+  padding: 2rem;
+  align-items: center;
+}
+
+.spnosor-imgages {
+  width: 5rem;
+}
+
+.spnosor-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  margin: 2rem 0;
+  justify-content: center;
+}
+
+/* -------------Landing page section--------------------- */
+
+/* ---------------footer section------------------- */
+
+footer {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  padding: 5rem;
+  margin-bottom: 0;
+  height: 30px;
+  align-items: center;
+  background-color: #fff;
+}
+
+.footer-image {
+  width: 5rem;
+}
+
+/* -------------Landing page section--------------------- */
+
+/* ---------------Desktop view------------------- */
+
+/* --------------header------------------------ */
+
+@media (min-width: 768px) {
+  .landing-section {
+    background-image: linear-gradient(180deg, rgba(255, 255, 255, 0) -3.75%, rgba(255, 255, 255, 0.8) 0%), url("../Images/Hero-image/main-hero-image.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    padding: 15rem 5%;
+    height: auto;
+  }
+
+  .intro-section {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .openingText {
+    color: var(--red);
+    font-weight: 400;
+    font-size: 32px;
+  }
+
+  .captureText {
+    font-size: 72px;
+    line-height: 5rem;
+  }
+
+  .explaining-text {
+    width: 38rem;
+  }
+
+  .eventDate {
+    font-size: 38px;
+  }
+
+  .venue {
+    font-size: 22px;
+  }
+
+  .shedule-container {
+    flex-direction: row;
+    gap: 10px;
+    padding: 0 5%;
+  }
+
+  .shedule-cards {
+    flex-direction: column;
+    gap: 5px;
+  }
+
+  .shedule-cards h3 {
+    width: 100%;
+  }
+
+  .shedule-cards p {
+    padding: 5px 10px;
+    font-size: 18px;
+  }
+
+  .image1 {
+    width: 9rem;
+  }
+
+  .button-container {
+    display: none;
+  }
+
+  .artist-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 0 5%;
+    gap: 30px;
+  }
+
+  .setoff {
+    display: block;
+    height: 100vh;
+  }
+
+  .text-header,
+  .text-header2 {
+    font-size: 33px;
+    font-weight: 700;
+  }
+
+  .line,
+  .line2 {
+    height: 5px;
+    width: 5rem;
+    border: none;
+  }
+
+  .program {
+    display: block;
+    font-size: 20px;
+  }
+
+  .seemore {
+    display: none;
+  }
+
+  .artist-section {
+    padding: 3rem 2rem 3rem 2rem;
+  }
+
+  .artist {
+    width: 100%;
+  }
+
+  .artist p {
+    font-size: 20px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .captureText {
+    font-size: 82px;
+    line-height: 6rem;
+    width: 40rem;
+  }
+}
+
+@media (min-width: 1400px) {
+  .captureText {
+    font-size: 92px;
+    line-height: 6rem;
+    width: 69rem;
+  }
+
+  .explaining-text {
+    width: 50rem;
+  }
+
+  .landing-section {
+    padding: 15rem 10%;
+  }
+
+  .artist-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 0 10%;
+    gap: 30px;
+  }
+
+  .shedule-container {
+    flex-direction: row;
+    gap: 10px;
+    padding: 0 10%;
+  }
+}
+
+@media (max-width: 600px) {
+  .landing-section {
+    padding: 10rem 2rem;
+  }
+
+  .captureText {
+    font-size: 42px;
+    width: 100%;
+    line-height: 3rem;
+  }
+
+  .openingText {
+    color: var(--red);
+    font-weight: 400;
+    font-size: 28px;
+  }
+
+  .explaining-text {
+    width: 100%;
+    font-size: 20px;
+    line-height: 1.9rem;
+    padding: 2rem;
+    border: 2px solid #fff;
+    background-color: var(--white);
+  }
+
+  .spnosor-section {
+    height: auto;
+  }
+}
+
+@media (max-width: 380px) {
+  .shedule-cards h3 {
+    width: 5%;
+  }
+
+  .landing-section {
+    padding: 10rem 0.5rem;
+  }
+
+  .shedule-section {
+    padding: 3rem 0.5rem;
+  }
+
+  .image {
+    width: 15%;
+    padding: 0.5rem;
+  }
+}
