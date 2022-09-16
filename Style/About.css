@@ -212,3 +212,37 @@ body {
     width: 40rem;
   }
 }
+
+@media (max-width: 600px) {
+  .openingText1 {
+    color: var(--red);
+    font-weight: 400;
+    font-size: 28px;
+  }
+
+  .captureText1 {
+    font-size: 42px;
+    line-height: 3rem;
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+    width: 100%;
+  }
+
+  .landing-section1 {
+    padding: 10rem 2rem;
+  }
+
+  .explaining-text1 {
+    width: 100%;
+    font-size: 16px;
+    line-height: 1.9rem;
+    padding: 1rem;
+  }
+
+  .about-logo img {
+    width: 90%;
+    padding: 9px;
+    margin: 13px;
+    border: 1px solid var(--black);
+  }
+}
