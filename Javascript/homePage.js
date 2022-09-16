@@ -43,11 +43,11 @@ artistContainer.forEach((cardArtist) => {
   const content = ` 
     <div class="artist">
     <div>
-     <img class="image-artist" src="${cardArtist.Image}">
+     <img class="image-artist" src="${cardArtist.Image}" alt="Artist-image">
     </div>
     <div class="cards">
-     <h1>${cardArtist.name}</h1>
-        <h2>${cardArtist.title}</h2>
+     <h2>${cardArtist.name}</h2>
+        <h3>${cardArtist.title}</h3>
 
         <p class="demo-text">${cardArtist.description}</p>
     </div>
