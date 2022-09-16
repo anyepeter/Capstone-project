@@ -29,8 +29,6 @@ body {
   width: 100%;
   padding: 15rem 2rem;
   height: auto;
-  opacity: 0;
-  transition: opacity 1s ease-in;
 }
 
 .intro-section {
@@ -111,6 +109,10 @@ body {
   height: 2px;
 }
 
+.program {
+  display: none;
+}
+
 .shedule-container,
 .artist-container {
   display: flex;
@@ -154,6 +156,10 @@ footer div p {
   padding: 0 1rem;
 }
 
+.shedule-cards:hover {
+  border: 2px solid var(--white);
+}
+
 .image {
   width: 5rem;
   padding: 1rem;
@@ -185,6 +191,7 @@ footer div p {
   background-position: center;
   background-repeat: no-repeat;
   height: auto;
+  width: 100%;
   overflow: hidden;
 }
 
@@ -247,13 +254,13 @@ footer div p {
   gap: 3px;
 }
 
-.cards h1 {
+.cards h2 {
   font-weight: 700;
   font-size: 18px;
   text-transform: uppercase;
 }
 
-.cards h2 {
+.cards h3 {
   font-weight: 900;
   color: var(--red);
   font-size: 28px;
@@ -294,9 +301,10 @@ footer div p {
 
 .spnosor-section {
   width: 100%;
-  height: auto;
+  height: 40vh;
   background-color: var(--black);
   padding: 2rem;
+  align-items: center;
 }
 
 .spnosor-imgages {
@@ -429,6 +437,11 @@ footer {
     border: none;
   }
 
+  .program {
+    display: block;
+    font-size: 20px;
+  }
+
   .seemore {
     display: none;
   }
@@ -480,5 +493,55 @@ footer {
     flex-direction: row;
     gap: 10px;
     padding: 0 10%;
+  }
+}
+
+@media (max-width: 600px) {
+  .landing-section {
+    padding: 10rem 2rem;
+  }
+
+  .captureText {
+    font-size: 42px;
+    width: 100%;
+    line-height: 3rem;
+  }
+
+  .openingText {
+    color: var(--red);
+    font-weight: 400;
+    font-size: 28px;
+  }
+
+  .explaining-text {
+    width: 100%;
+    font-size: 20px;
+    line-height: 1.9rem;
+    padding: 2rem;
+    border: 2px solid #fff;
+    background-color: var(--white);
+  }
+
+  .spnosor-section {
+    height: auto;
+  }
+}
+
+@media (max-width: 380px) {
+  .shedule-cards h3 {
+    width: 5%;
+  }
+
+  .landing-section {
+    padding: 10rem 0.5rem;
+  }
+
+  .shedule-section {
+    padding: 3rem 0.5rem;
+  }
+
+  .image {
+    width: 15%;
+    padding: 0.5rem;
   }
 }
