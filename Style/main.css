@@ -1,0 +1,254 @@
+
+/* main color */
+
+:root {
+  --black: #272a31;
+  --red: #ec5242;
+  --white: #d3d3d3;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Lato', sans-serif;
+}
+
+/* ------------- Header navbar--------------------- */
+
+/* ---- First navder with the social media icon---- */
+
+header {
+  width: 100%;
+  position: fixed;
+}
+
+.first-navbar,
+.brand-logo {
+  display: none;
+}
+
+.circle {
+  width: 35%;
+  height: 188px;
+  background-color: #fff;
+  position: fixed;
+  border-radius: 50%;
+  top: -40px;
+  left: -84px;
+}
+
+/* ------------- Header navbar--------------------- */
+
+/* ----mobile menu---- */
+.nav-list-items {
+  display: none;
+  flex-direction: column;
+  gap: 10px;
+  padding: 5rem 2rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+  list-style: none;
+  height: 100vh;
+  width: 100%;
+  background-color: var(--black);
+  animation-name: slidein;
+  animation-duration: 2s;
+  animation-direction: alternate;
+}
+
+@keyframes slidein {
+  from {
+    left: -700px;
+  }
+
+  to {
+    left: 0;
+  }
+}
+
+.action {
+  display: block;
+}
+
+.list-item {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  font-size: 38px;
+  padding: 20px 10px;
+  border-bottom: 2px solid var(--white);
+}
+
+.list-item a {
+  color: #fff;
+  transition: all;
+  transition-duration: 0.4s;
+  transition-delay: 0.1s;
+  text-decoration: none;
+}
+
+.list-item a:hover {
+  color: var(--red);
+  font-size: 42px;
+}
+
+.list-item a:focus {
+  color: var(--red);
+  font-size: 42px;
+}
+
+/* ------------- Header navbar--------------------- */
+
+/* ----hambuger----- */
+
+.hambuger-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 50px;
+  position: relative;
+  top: 2rem;
+  left: 2rem;
+}
+
+.hambuger-container.active .bar:nth-child(2) {
+  opacity: 0;
+  transition: all;
+  transition-duration: 1s;
+}
+
+.hambuger-container.active .bar:nth-child(1) {
+  transform: translateY(15px) rotate(45deg);
+  background-color: var(--white);
+  transition: all;
+  transition-duration: 1s;
+}
+
+.hambuger-container.active .bar:nth-child(3) {
+  transform: translateY(-20px) rotate(-45deg);
+  background-color: var(--white);
+  transition: all;
+  transition-duration: 1s;
+}
+
+.hambuger-container div {
+  height: 7px;
+  width: 100%;
+  background-color: var(--black);
+}
+
+/* ------------- Desktop view--------------------- */
+
+/* ----navbar----- */
+
+@media (min-width: 768px) {
+  header {
+    width: 100%;
+    position: fixed;
+    height: auto;
+  }
+
+  .first-navbar {
+    width: 100%;
+    height: 40px;
+    background-color: var(--black);
+    color: white;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 0 10% 0 4rem;
+    list-style: none;
+  }
+
+  .firstbar {
+    color: var(--white);
+    text-decoration: none;
+  }
+
+  .list-item {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    font-size: 22px;
+    padding: 0 10px;
+    border-bottom: none;
+  }
+
+  .hambuger-container,
+  .list-item:nth-child(1),
+  .circle {
+    display: none;
+  }
+
+  .navbar {
+    width: 100%;
+    height: auto;
+    padding: 1rem 10% 1rem 5%;
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(251, 243, 243);
+  }
+
+  .brand-logo {
+    width: 8rem;
+    display: block;
+  }
+
+  .nav-list-items {
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    padding: 0;
+    position: inherit;
+    list-style: none;
+    height: inherit;
+    width: 60%;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0);
+  }
+
+  .list-item a {
+    color: var(--black);
+    text-decoration: none;
+  }
+
+  .list-item:nth-child(6) {
+    border: 5px solid var(--red);
+    padding: 10px;
+  }
+}
+
+@media (min-width: 1400px) {
+  .navbar {
+    padding: 1rem 10% 1rem 10%;
+  }
+}
+
+@media (max-width: 600px) {
+  .circle {
+    width: 40%;
+    top: -7%;
+    left: -20%;
+  }
+
+  .hambuger-container {
+    width: 10%;
+  }
+}
+
+@media (max-width: 600px) {
+  .circle {
+    width: 40%;
+    top: -7%;
+    left: -20%;
+  }
+
+  .hambuger-container {
+    width: 10%;
+    padding: 0;
+    left: 1rem;
+  }
+}
