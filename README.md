@@ -14,7 +14,7 @@ This project is develop using the following languages
 
 ## Live Demo
 
-[Live Demo Link](https://livedemo.com)
+[Live Demo Link](https://anyepeter.github.io/Capstone-project/)
 
 
 ## live loom
