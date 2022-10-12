@@ -2,7 +2,7 @@
 
 # Mboko Drill
 
-> Mboko drill is a music show were rappers are invited to perform their skills. Mboko is a hidden culture in which most African country are praticing it. The common language allocated with this is called "pigin"
+>"Mboko drill" is a music show where rappers are invited to perform their skills. Mboko is a hidden culture. Most African countries are practicing it. The common language allocated with this is called "pigin".
 
 
 ## Built With
