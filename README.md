@@ -33,7 +33,11 @@ You will need the following;
 
 ### Install
 Open the project in your code editor
+- To install all the dependencies run:
 
+```sh
+npm install
+```
 ## Authors
 
 👤 **ANYE PETER**
